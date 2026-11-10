@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Calculadora web sencilla hecha con HTML, CSS y JavaScript.">
+  <title>Calculadora web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="calculator" aria-label="Calculadora">
+      <header class="calculator__header">
+        <div>
+          <p class="eyebrow">PROYECTO WEB · UNIDAD 1</p>
+          <h1>Calculadora</h1>
+        </div>
+        <span class="calculator__icon" aria-hidden="true">＋</span>
+      </header>
+
+      <div class="screen" aria-live="polite" aria-atomic="true">
+        <p class="screen__expression" id="expression">Listo para calcular</p>
+        <output class="screen__value" id="display">0</output>
+      </div>
+
+      <div class="keypad" id="keypad" aria-label="Teclas de la calculadora">
+        <button class="key key--utility" type="button" data-action="clear" aria-label="Borrar todo">AC</button>
+        <button class="key key--utility" type="button" data-action="backspace" aria-label="Borrar último dígito">⌫</button>
+        <button class="key key--operator" type="button" data-operator="÷" aria-label="Dividir">÷</button>
+        <button class="key key--operator" type="button" data-operator="×" aria-label="Multiplicar">×</button>
+
+        <button class="key" type="button" data-digit="7">7</button>
+        <button class="key" type="button" data-digit="8">8</button>
+        <button class="key" type="button" data-digit="9">9</button>
+        <button class="key key--operator" type="button" data-operator="−" aria-label="Restar">−</button>
+
+        <button class="key" type="button" data-digit="4">4</button>
+        <button class="key" type="button" data-digit="5">5</button>
+        <button class="key" type="button" data-digit="6">6</button>
+        <button class="key key--operator" type="button" data-operator="+" aria-label="Sumar">+</button>
+
+        <button class="key" type="button" data-digit="1">1</button>
+        <button class="key" type="button" data-digit="2">2</button>
+        <button class="key" type="button" data-digit="3">3</button>
+        <button class="key key--equals" type="button" data-action="equals" aria-label="Igual">=</button>
+
+        <button class="key key--zero" type="button" data-digit="0">0</button>
+        <button class="key" type="button" data-action="decimal" aria-label="Punto decimal">.</button>
+      </div>
+      <p class="hint">También puedes usar el teclado de tu computadora.</p>
+    </section>
+    <footer class="page__footer">Hecha con <strong>HTML</strong>, <strong>CSS</strong> y <strong>JavaScript</strong></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
